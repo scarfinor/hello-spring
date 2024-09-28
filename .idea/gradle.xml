@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/examples" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/examples" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/studio" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/studio" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/classes-part-one/exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/classes-part-one/exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/classes-part-one/studio/restaurant-menu" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/classes-part-one/studio/restaurant-menu" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/control-flow-and-collections/chapter-example/student-example" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/control-flow-and-collections/chapter-example/student-example" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/control-flow-and-collections/chapter-exercise/student-exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/control-flow-and-collections/chapter-exercise/student-exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/controllers-and-routing/exercises/controllers-routing-exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/controllers-and-routing/exercises/controllers-routing-exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/datatypes/datatype-examples" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/datatypes/datatype-examples" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/datatypes/datatypes-exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/datatypes/datatypes-exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/datatypes/datatypes-studio" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/datatypes/datatypes-studio" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/exceptions/chapter-example/temperature-example" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/exceptions/chapter-example/temperature-example" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/exceptions/exercises/student-grade-exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/exceptions/exercises/student-grade-exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/inheritance/testing-inheritance/exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/inheritance/testing-inheritance/exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/interfaces/exercises/ice-cream-exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/interfaces/exercises/ice-cream-exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/interfaces/studio/spinning-discs-studio" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/interfaces/studio/spinning-discs-studio" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/chapter-example/car-example" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/chapter-example/car-example" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/exercises/car-exercises" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/exercises/car-exercises" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/studio/balanced-brackets" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/studio/balanced-brackets" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
