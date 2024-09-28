@@ -25,15 +25,22 @@ public class HelloController {
     //Handles request of the form /testClass/test?name=LaunchCode
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "test")
     //@ResponseBody
-    public String testWithQueryParam(String name) {
+    public String testWithQueryParam(@RequestParam String name) {
         return  "Hello, " + name + "!";
     }
 
-    //Handles request of the form /testClass/test/LaunchCode
-    @GetMapping("test/{name}")
+    //Handles request of the form /testClass/test2?friend=John&name=Richard
+    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "test2")
     //@ResponseBody
-    public String testWithPathParam(@PathVariable String name) {
-       return "Hello " + name + "!";
+    public String testWithQueryParam2(@RequestParam String friend, @RequestParam String name) {
+        return  "Hello, " + friend + " and " + name + "!";
+    }
+
+    //Handles request of the form /testClass/test/Richard/John
+    @GetMapping("test/{name}/{friend}")
+    //@ResponseBody
+    public String testWithPathParam(@PathVariable String name, @PathVariable String friend) {
+       return "Hello " + name + " and " + friend + "!";
     }
 
     //Handles request of the /testClass/form
@@ -43,11 +50,12 @@ public class HelloController {
         return "<html>" +
                 "<body>" +
                 "<p>" +
-                "Please enter a name!" +
+                "Please enter a name & a friend's name!" +
                 "</p>" +
-                "<form action='test' method='post'>" + //submit a request to /test
-                "<input type='text' name='name'>" +
-                "<input type='submit' value='Submit'" +
+                "<form action='test2' method='post'>" + //submit a request to /test2
+                "<input type='text' name='name' placeholder='Your Name'>" +
+                "<input type='text' name='friend' placeholder='Friend\'s Name'>" +
+                "<input type='submit' value='Submit'>" +
                 "</form>" +
                 "</body>" +
                 "</html>";
