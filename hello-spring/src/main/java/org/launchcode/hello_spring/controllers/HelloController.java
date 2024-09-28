@@ -54,7 +54,7 @@ public class HelloController {
                 "</p>" +
                 "<form action='test2' method='post'>" + //submit a request to /test2
                 "<input type='text' name='name' placeholder='Your Name'>" +
-                "<input type='text' name='friend' placeholder='Friend\'s Name'>" +
+                "<input type='text' name='friend' placeholder='Friends Name'>" +
                 "<input type='submit' value='Submit'>" +
                 "</form>" +
                 "</body>" +
