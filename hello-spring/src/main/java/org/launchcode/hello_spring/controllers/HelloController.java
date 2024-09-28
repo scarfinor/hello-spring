@@ -5,73 +5,45 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @ResponseBody
-@RequestMapping(value="testClass")
+@RequestMapping("hello")
 public class HelloController {
+    //handle request at path http://localhost:8080/hello
 
-    //Handles request at path /testClass/hello
-   @GetMapping("hello")
-   //@ResponseBody
-    public String hello() {
-        return "Hello, Spring!";
-    }
+//    @GetMapping("hello")
+//    @ResponseBody
+//    public String hello(){
+//        return "Hello, Spring!";
+//    }
 
-    //lives at /testClass/goodbye
+    //handle request at path //http://localhost:8080/hello/goodbye
     @GetMapping("goodbye")
-    //@ResponseBody
-    public String goodBye() {
+    public String goodbye(){
         return "Goodbye, Spring!";
     }
 
-    //Handles request of the form /testClass/test?name=LaunchCode
-    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "test")
-    //@ResponseBody
-    public String testWithQueryParam(@RequestParam String name) {
-        return  "Hello, " + name + "!";
+    //handle requests of the form http://localhost:8080/hello?name=LaunchCode
+    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
+    public String helloWithQueryParam(@RequestParam String name){
+        return "Hello, " + name + "!";
     }
 
-    //Handles request of the form /testClass/test2?friend=John&name=Richard
-    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value = "test2")
-    //@ResponseBody
-    public String testWithQueryParam2(@RequestParam String friend, @RequestParam String name) {
-        return  "Hello, " + friend + " and " + name + "!";
+    //handle requests of the form http://localhost:8080/hello/LaunchCode
+    @GetMapping("{name}")
+    public String helloWithPathParam(@PathVariable String name){
+        return "Hello, " + name + "!";
     }
 
-    //Handles request of the form /testClass/test/Richard/John
-    @GetMapping("test/{name}/{friend}")
-    //@ResponseBody
-    public String testWithPathParam(@PathVariable String name, @PathVariable String friend) {
-       return "Hello " + name + " and " + friend + "!";
-    }
-
-    //Handles request of the /testClass/form
+    //handles requests for http://localhost:8080/hello/form
     @GetMapping("form")
-    //@ResponseBody
-    public String form() {
+    public String helloForm() {
         return "<html>" +
                 "<body>" +
-                "<p>" +
-                "Please enter a name & a friend's name!" +
-                "</p>" +
-                "<form action='test2' method='post'>" + //submit a request to /test2
-                "<input type='text' name='name' placeholder='Your Name'>" +
-                "<input type='text' name='friend' placeholder='Friends Name'>" +
-                "<input type='submit' value='Submit'>" +
+                "<form action = '/hello' method = 'post'>" + // submit a request to /hello
+                "<input type = 'text' name = 'name' >" +
+                "<input type = 'submit' value = 'Greet Me!' >" +
                 "</form>" +
                 "</body>" +
                 "</html>";
     }
 
-        // responds to /testClass
-        @GetMapping("")
-        //@ResponseBody
-        public String testClass() {
-            return "Hello, Richard";
-        }
-
-        // responds to /testClass/testMethod
-        @GetMapping("testMethod")
-        //@ResponseBody
-        public String testMethod() {
-            return "Hello, Richard";
-        }
 }
