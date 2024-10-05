@@ -4,6 +4,22 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="IDE">
+            <builds>
+              <build path="$PROJECT_DIR$/java-web-dev-projects/controllers-and-routing/exercises/controllers-routing-exercises" name="controllers-routing-exercises" />
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/classes-part-2/examples" />
         <option name="modules">
           <set>
@@ -133,6 +149,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/chapter-example/car-example" />
+        <option name="gradleJvm" value="17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java-web-dev-projects/unit-testing/chapter-example/car-example" />
