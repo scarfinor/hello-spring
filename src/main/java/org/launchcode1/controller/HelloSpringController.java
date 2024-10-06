@@ -2,17 +2,30 @@ package org.launchcode1.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.ui.Model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping("hello")
 public class HelloSpringController {
     //handle request at path http://localhost:8080/hello
 
-//    @GetMapping("hello")
-//    @ResponseBody
-//    public String hello(){
-//        return "Hello, Spring!";
-//    }
+   @RequestMapping (value = "hello", method = {RequestMethod.GET, RequestMethod.POST})
+   public String hello(@RequestParam String name, Model model) {
+       String greeting = "Hello, " + name + "!";
+       model.addAttribute("greeting", greeting);
+        return "hello";
+    }
+
+    @GetMapping("hello/{name}")
+    @ResponseBody
+    public String helloAgian(@PathVariable String name, Model model) {
+       String greeting = "Hello, " + name + "!";
+       model.addAttribute("greeting", greeting);
+       return "hello";
+    }
 
     //handle request at path //http://localhost:8080/hello/goodbye
     @GetMapping("goodbye")
@@ -72,5 +85,15 @@ public class HelloSpringController {
     @GetMapping("form")
     public String helloForm() {
         return "form";
+    }
+
+    @GetMapping ("hello-names")
+    public String helloNames(Model model) {
+        List<String> names = new ArrayList<>();
+        names.add("Java");
+        names.add("LaunchCode");
+        names.add("JavaScript");
+        model.addAttribute("names", names);
+        return "hello-list";
     }
 }
